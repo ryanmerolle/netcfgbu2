@@ -1,0 +1,30 @@
+---
+hosts:
+  - host: "172.29.151.7"
+    hostname: "leaf5"
+    platform: "arista_eos"
+    #username: "lab"  # Optional override
+    #password: "2022Nebul4"  # Optional override
+    #strict_key: false  # Optional override
+    #protocol: ssh
+  - host: "172.29.151.8"
+    hostname: "leaf6"
+    platform: "arista_eos"
+  #  username: "lab"  # Optional override
+  #  password: "2022Nebul4"  # Optional override
+  #  strict_key: false  # Optional override
+  #  protocol: ssh
+  - host: "172.29.151.1"
+    hostname: "spine1"
+    platform: "cisco_nxos"
+    #username: "lab"  # Optional override
+    #password: "2022Nebul4"  # Optional override
+    #strict_key: false  # Optional override
+    #protocol: ssh
+  - host: "172.29.151.2"
+    hostname: "spine2"
+    platform: "cisco_nxos"
+  #   username: "lab"  # Optional override
+  #   password: "2022Nebul4"  # Optional override
+  #   strict_key: false  # Optional override
+  #   protocol: ssh

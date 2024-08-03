@@ -12,10 +12,11 @@ type Device struct {
 	Hostname string `yaml:"hostname" json:"hostname"`
 	Host     string `yaml:"host" json:"host"`
 	Platform string `yaml:"platform" json:"platform"`
+	Protocol string `yaml:"protocol,omitempty" json:"protocol,omitempty"`
 }
 
 type Inventory struct {
-	Devices []Device `yaml:"devices" json:"devices"`
+	Devices []Device `yaml:"hosts" json:"hosts"`
 }
 
 func LoadInventory(filename string) (*Inventory, error) {

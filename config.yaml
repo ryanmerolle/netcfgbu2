@@ -1,7 +1,0 @@
----
-batch_count: 50
-username: admin
-password: admin
-show_command: "show run | no-more"
-save_location: "./backups"
-inventory_file: "./inventory.yaml"

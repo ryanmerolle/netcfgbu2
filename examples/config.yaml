@@ -1,0 +1,29 @@
+---
+batch_count: 50
+configs_dir: "./examples/backups"
+inventory: "./examples/inventory.yaml"
+configs_extension: "cfg"
+default_username: "lab"
+default_password: "2022Nebul4"
+default_timeout: 5
+
+platform_configs:
+  cisco_nxos:
+    #timeout: 10
+    linter: "cisco_nxos"
+    get_config: "show run | no-more"
+    pre_get_config:
+     - "termnial length 0"
+    post_get_config: "TEST"
+  arista_eos:
+    #timeout: 10
+    #linter:
+    get_config: "show run | no-more"
+    pre_get_config:
+      - "test"
+    post_get_config:
+
+linters:
+  cisco_nxos:
+    config_starts_after: "!Time:"
+    #config_ends_at:
